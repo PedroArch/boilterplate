@@ -1,13 +1,14 @@
 import * as S from './styles'
 
-export default function Main() {
+export default function Main({
+  title = 'BOILERPLATE',
+  description = 'TypeScript, ReactJS, NextJS e Styled Components'
+}) {
   return (
     <S.Wrapper>
       <S.Logo src="img/logo.png" alt="logo" />
-      <S.Title>BOILERPLATE</S.Title>
-      <S.Description>
-        TypeScript, ReactJS, NextJS e Styled Components
-      </S.Description>
+      <S.Title>{title}</S.Title>
+      <S.Description>{description}</S.Description>
       <S.Illustration
         src="img/hero-illustration.svg"
         alt="Desenvolvedor codando"
